@@ -3,7 +3,7 @@
 if(!empty($_POST['submit'])){
 
   // if user exists: delete
-  $currentUserDataJ = file_get_contents("bot.json");
+  $currentUserDataJ = file_get_contents("/var/www/bibbot/bot.json");
   $currentUserData = json_decode($currentUserDataJ, true);
   unset( $currentUserData[$_POST['uid']] );
 

@@ -1,6 +1,6 @@
 <?php
 // user logins
-$userDataJ = file_get_contents("bot.json");
+$userDataJ = file_get_contents("/var/www/bibbot/bot.json");
 $userdata = json_decode($userDataJ, true);
 
 // next 14 days
